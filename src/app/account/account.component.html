@@ -1,0 +1,34 @@
+<div class="container">
+    <h4>Review and Edit Account Information</h4>
+    <form [formGroup]="accountForm">
+        <div class="midpart">
+            <mat-form-field class="form-group">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" id="first-name" formControlName="firstName">
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" id="last-name" formControlName="lastName">
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <mat-label>Email ID</mat-label>
+                <input matInput type="text" id="email" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <mat-label>Contact Number</mat-label>
+                <input matInput type="text" id="number" formControlName="number">
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <mat-label>Password</mat-label>
+                <input matInput type="text" id="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <button mat-button (click)="save()">Submit</button>
+        </div>
+    </form>
+</div>
